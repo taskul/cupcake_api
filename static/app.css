@@ -1,0 +1,33 @@
+.add-new-form {
+    width: 50%;
+}
+
+.form-title {
+    display: inline-block;
+    justify-content: center;
+}
+
+.main-container {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.cupcake-card {
+    display: inline-block;
+    background-color: thistle;
+    border-radius: 5px;
+    width: 30%;
+    max-width: 35%;
+    padding: 20px 30px 20px 30px;
+    margin: 10px;
+    text-align: center;
+}
+
+.card-image {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}

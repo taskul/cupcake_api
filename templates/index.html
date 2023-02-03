@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/app.css">
+    <title>Cupcake Store</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1 class="display-1 text-center">Welcome to Great Cupcake Store</h1>
+        <div class="row">
+            <div class="col-sm-8">
+                <h2 class="form-title">Available cupcakes</h2>
+                <div class="cupcakes-board">
+                    <ul class="cupcakes-list">
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h2 class="form-title">Add new cupcake</h2>
+                <form action="/" method="POST" class="add-cupcake-form">
+                    <div class="form-group">
+                        <label for="flavor">Flavor:
+                            <input type="text" id="flavor" name="flavor">
+                        </label><br>
+                        <label for="size">Size:
+                            <select id="size" name="size">
+                                <option value="small">Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                            </select>
+                        </label><br>
+                        <label for="rating">Rating:
+                            <input type="number" id="rating" name="rating" min="0" max="10">
+                        </label><br>
+                        <label for="image_url">Image URL:
+                            <input type="url" id="image_url" name="image_url">
+                        </label>
+                    </div>
+                    <button class="btn  btn-success  btn-lg">Add</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+
+</html>
